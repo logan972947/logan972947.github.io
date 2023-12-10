@@ -1,82 +1,246 @@
 <!doctype html>
-<html>
-<head>
+<html lang="en">
+  <head>
+
     <title>Logan Messer's  Portfolio Page</title>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/bootstrap.bundle.min.js"></script>
-</head>
+    <link href="https://getbootstrap.com/docs/5.1/examples/carousel/carousel.css" rel="stylesheet">
 
-<body>
-    MY WEBSITE
-    <div class="card m-2" style="width: 20rem;">
-        <img src="images/Pic 1.jpg" width="150" class="card-img-top" alt="My profile picture">
-        <div class="card-body">
-          <h5 class="card-title">About Me</h5>
-          <p class="card-text">I have been working since I was 15, I've had 2 paid jobs but have done odd jobs such as yard work, dog walking, and babysitting. I like to venture into uncomfortable things and learn from any experience I can.</p>
-        </div>
-    </div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-    <div>
-        <h2>Contact Information</h2>
-       <p>Email: <a href="mailto:messerl@oregonstate.edu"target="_blank">messerl@oregonstate.edu</a></p>
-    </div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-    <div>
-        <p>Email link doesn't work, maybe because it's a school email?</p>
+  </head>
+  <body>
 
-        <p> github:<a target="_blank" href="https://github.com/logan972947/logan972947.github.io/tree/main">GITHUB</a></p>
-    </div>
-
-    <div>
-        <img src="images/Pic4.jpg" width="400"/>
-        <p>^Toby/Cat^</p>
-    </div>
-    <div>
-        <h2>Experience</h2>
-        <p>I have no computer related skills but am a capable person and am good at working and communications with others.</p>
-    </div>
-    <div>
-        <h2>Related Skills</h2>
-        <p>-am working towards learning Python</p>
-        <p>-capable worker</p>
-        <p>-fast learner</p>
-        <p>-knows when to ask for help</p>  
-        <p>-works well with others</p>
-    </div>
-    <div>
-        <h2>Personal Projects</h2>
-        <p>Making a website with all this information at the moment. Have done oil changes, serpentine belt replacement, tire rotations, etc.</p>
-    </div>
-    <div>
-        <h2>Documented Source Code</h2>
-        <p>github:<a target="_blank" href="https://github.com/logan972947/logan972947.github.io/tree/main">GITHUB</a></p>
-
-       <p>In this repository, we used HTML to create our personal portfolio pages that contained all this information.</p>
-    </div>
-    <div>
-        <h2>Education</h2>
-        <p> I have a high school diploma and am currently enrolled at Oregon State University, Cascades.</p>
-    </div>
-    <div>
-        <h2>Relevent Social Media Platforms</h2>
-        <p>github:<a target="_blank" href="https://github.com/logan972947/logan972947.github.io/tree/main">GITHUB</a></p>
-
-    </div>
-    <div>
-        <p>Linkedin:<a href="https://www.linkedin.com/in/logan-messer-a393a8297/"target="_blank">LINKEDIN</a></p>
-            
-    </div>
-    <div>
-        <h2>Awards</h2>
-        <p>Some awards for running track lol</p>
-    </div>
-    <div>
-        <h2>Super Very Cool Pictures</h2>
-        <img src="images/Pic2.jpg"width="200"/>
-        <img src="images/Pic3.jpg"width="200"/>
-    </div>
-    <a target="_blank" href="https://icons8.com/icon/dXkd1xqlnOsD/listening-to-music-on-headphones">Listening To Music On Headphones</a> icon by Icons8
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logans Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:messerl@oregonstate.edu" target="_blank">Email</a>
+          </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/logan972947/logan972947.github.io/tree/main" target="_blank">GitHub</a>
+          </li>
+        </ul>
+        
+        <img src="images/music1.jpg" width="50" height="50">
+        <img src="images/music2.jpg"width="50" height="50">
+        <img src="images/music3.jpg"width="50" height="50">
+        <img src="images/music4.jpg"width="50" height="50">
     
-</body>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/cat2.JPG">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>He Just Always In His Own World.</h1>
+            <p></p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/cat.jpg">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>He Really Quiet For Real Unless He Know You.</h1>
+            <p></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/cat3.jpg">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>He Funny As Hell Though.</h1>
+            <p></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/pic1.JPG"
+          width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <h2>Friends</h2>
+        <p>The relationships I make with the people around me are very important so of course they get a section.</p>
+        <p><a class="btn btn-secondary" href="#about">Pics &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/beach.jpg"
+          width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 300x300" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <h2>Home</h2>
+        <p>Can't wait to go back for christmas break.</p>
+        <p><a class="btn btn-secondary" href="#about2">Pictures &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/yell2.jpg" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 450x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+        <h2>Music</h2>
+        <p>Along with the two previous catagories, music is a staple.</p>
+        <p><a class="btn btn-secondary" href="#about3">And More Pics &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="about">
+      <div class="col-md-15">
+        <h2 class="featurette-heading">These Guys <span class="text-muted"></span></h2>
+        <p class="lead">A life without relationships is without meaning.</p>
+      </div>
+      <div class="col-md-20">
+        <img src="images/meninblack.jpg" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x400" preserveAspectRatio="xMidYMid slice"> 
+        <img src="images/spiderman.jpg" width="400" height="300">
+        <img src="images/target.jpg" width="400" height="300">
+        <img src="images/aus.jpg" width="400" height="300">
+        <img src="images/schoolspirit2.jpg" width="400" height="300">
+        <img src="images/guitar.jpg" width="400" height="300">
+        <img src="images/hike.JPG" width="400" height="300">
+        <img src="images/beach4.jpg" width="400" height="300">
+        <img src="images/scholars.jpg" width="400" height="300">
+        <img src="images/hottub.jpg" width="400" height="300">
+        <img src="images/rjroom.jpg" width="400" height="300">
+        <img src="images/xmashats.jpg" width="400" height="300">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider" id="about2">
+
+    <div class="row featurette">
+      <div class="col-md-15">
+        <h2 class="featurette-heading">Hawai'i is home <span class="text-muted"></span></h2>
+        <p class="lead">And I miss it more than I thought I would</p>
+      </div>
+      <div class="col-md-20 ">
+        <img src="images/chicken.jpg" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300" preserveAspectRatio="xMidYMid slice">
+        <img src="images/flashhike.jpg" width="400" height="300">
+        <img src="images/flowertree.jpg" width="400" height="300">
+        <img src="images/bayveiw.jpg" width="400" height="300">
+        <img src="images/jumprock.jpg" width="400" height="300">
+        <img src="images/pinveiw.jpg" width="400" height="300">
+        <img src="images/coolreflect.jpg" width="400" height="300">
+
+        <img src="images/flashhikep.jpg" width="400" height="300">
+        <img src="images/moonreflect.jpg" width="400" height="300">
+        <img src="images/hileveiw.jpg" width="400" height="300">
+        <img src="images/notsure.jpg" width="400" height="300">
+        <img src="images/waterfall.jpg" width="400" height="300">
+        
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider" id="about3">
+
+    <div class="row featurette">
+      <div class="col-md-15">
+        <h2 class="featurette-heading">I've Only Been To 3 Concerts But Now That I'm In Oregon I'm Gonna Go To Many More. <span class="text-muted"></span></h2>
+        <p class="lead">The Weeknd is someone I must see before I leave this Earth.</p>
+      </div>
+      <div class="col-md-20">
+        <img src="images/herconcert.jpg" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300" preserveAspectRatio="xMidYMid slice">
+        <img src="images/travisinlight2.jpg" width="400" height="300">
+        <img src="images/deadconcert.jpg" width="400" height="300">
+        <img src="images/spotifyartist.jpg" width="400" height="300">
+        <img src="images/travispit.jpg" width="400" height="300">
+        <img src="images/travisnextlight.jpg" width="400" height="300">
+        <img src="images/deadhat.jpg" width="400" height="300">
+        <img src="images/spotifymin.jpg" width="400" height="300">
+        <img src="images/travistanclothes.jpg" width="400" height="300">
+        <img src="images/traviswalking.jpg" width="400" height="300">
+        <img src="images/travispit2.jpg" width="400" height="300">
+        <img src="images/herconcert2.jpg" width="400" height="300">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2005–Present, Logan Inc. &middot; <a href="#">Ur</a> &middot; <a href="#">Mom</a></p>
+  </footer>
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
 </html>
